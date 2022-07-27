@@ -35,4 +35,11 @@
      >>> np.loadtxt("myfile.txt")
      >>> np.genfromtxt("my_file.csv", delimiter=',')
      >>> np.savetxt("myarray.txt", a, delimiter=" ")
-
+### Data Types
+     >>> np.int64 Signed 64-bit integer types
+     >>> np.float32 Standard double-precision floating point
+     >>> np.complex Complex numbers represented by 128 floats
+     >>> np.bool Boolean type storing TRUE and FALSE values
+     >>> np.object Python object type
+     >>> np.string_ Fixed-length string type
+     >>> np.unicode_ Fixed-length unicode type
