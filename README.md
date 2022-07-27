@@ -26,3 +26,9 @@
      >>> f = np.eye(2)                       #Create a 2X2 identity matrix
      >>> np.random.random((2,2))             #Create an array with random value                                                                    
      >>> np.empty((3,2))                     #Create an empty array
+### I/O
+### Saving & Loading On Disk
+     >>> np.save('my_array', a)
+     >>> np.savez('array.npz', a, b)
+     >>> np.load('my_array.npy')
+     
