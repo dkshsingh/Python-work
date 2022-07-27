@@ -52,6 +52,12 @@
      >>> np.add(b,a)        #addition
      >>> a/b                #division
      >>> np.divide(a,b)     #division
-
-
+     >>> a*b                #multiplication
+     >>> np.multiply        #multiplication
+     >>> np.exp(b)          #Exponentiation
+     >>> np.sqrt(b)         #Square root
+     >>> np.sin(a)          #Print sines of an array
+     >>> np.cos(b)          #Element-wise cosine
+     >>> np.log(a)          #Element-wise natural logarithm
+     >>> e.dot(f)           #Dot product
 
