@@ -43,3 +43,15 @@
      >>> np.object           #Python object type
      >>> np.string_          #Fixed-length string type
      >>> np.unicode_         #Fixed-length unicode type
+
+### Array mathmatics
+### Airthmatic operations
+     >>> g = a - b          # Subtraction
+     >>> np.subtract(a,b)   #Substraction
+     >>> b + a              #Addition
+     >>> np.add(b,a)        #addition
+     >>> a/b                #division
+     >>> np.divide(a,b)     #division
+
+
+
