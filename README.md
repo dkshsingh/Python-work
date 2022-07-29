@@ -61,3 +61,17 @@
      >>> np.log(a)          #Element-wise natural logarithm
      >>> e.dot(f)           #Dot product
 
+### Comparison
+     >>> a==b                   #element-wise comparison
+     >>> a<2                    #element-wise comparison
+     >>> np.array_equal(a,b)    # array-wise comparison
+
+
+
+
+
+
+
+
+
+
