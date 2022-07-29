@@ -25,3 +25,19 @@
           transpose = [list(i) for i in zip(*a)]
           transpose
           > [[1,4,7],[2,5,8],[3,6,9]]
+### 4. type-casting whole list in one go
+### code:
+         list(map(int,['1','2','3']))
+         >[1,2,3]
+         list(map(float,[1,2,3]))
+         >[1.0,2.0,3.0]
+         [float(i) for i in [1,2,3]]
+         >[1.0,2.0,3.0]
+### 5. creating lists using for loop
+### code:
+        lst = list(range(0,10))
+        print(lst)
+         
+         
+         
+         
