@@ -76,9 +76,14 @@
      >>>a.corrcof()              #correlation coefficiant
      >>>np.std(b)                #standard deviation
 
+### copying array
+     >>> h=a.view                #create a view of the array with the same data
+     >>> np.copy(a)              #create a copy of the array
+     >>> h=a.copy()              #create a deep copy of the array
 
-
-
+### sorting arrays
+     >>> a.sort()                #sort an array
+     >>> c.sort(axis=0)          #sort the element of an array's axis
 
 
 
