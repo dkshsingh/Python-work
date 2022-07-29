@@ -66,7 +66,15 @@
      >>> a<2                    #element-wise comparison
      >>> np.array_equal(a,b)    # array-wise comparison
 
-
+### Aggregate functions
+     >>>a.sum()                  #array-wise sum
+     >>>a.min()                  #array-wise minimum value
+     >>>b.max(axis=0)            #max value of an array row
+     >>>b.cumsum(axis-1)         #cumulative sum of the element
+     >>>a.mean()                 #mean
+     >>>a.median()               #median
+     >>>a.corrcof()              #correlation coefficiant
+     >>>np.std(b)                #standard deviation
 
 
 
