@@ -65,7 +65,21 @@
     df.rename(columns={'old_name': 'new_ name'}) |    Selective renaming
     df.set_index('column_one') |                      Change the index
     df.rename(index=lambda x: x + 1) |                Mass renaming of index  
-    
+## Filter, Sort, and Groupby
+    Use these commands to filter, sort, and group your data.
+
+    df[df[col] > 0.5] |                                     Rows where the column col is greater than 0.5
+    df[(df[col] > 0.5) & (df[col] < 0.7)] |                 Rows where 0.7 > col > 0.5
+    df.sort_values(col1) |                                  Sort values by col1 in ascending order
+    df.sort_values(col2,ascending=False) |                  Sort values by col2 in descending order
+    df.sort_values([col1,col2],ascending=[True,False]) |    Sort values by col1 in ascending order then col2 in descending order
+    df.groupby(col) |                                       Returns a groupby object for values from one column
+    df.groupby([col1,col2]) |                               Returns groupby object for values from multiple columns
+    df.groupby(col1)[col2] |                                Returns the mean of the values in col2, grouped by the values in col1 (mean can be replaced with almost any function from the statistics module)
+    df.pivot_table(index=col1,values=[col2,col3],aggfunc=mean) |       Create a pivot table that groups by col1 and calculates the mean of col2 and col3
+    df.groupby(col1).agg(np.mean) |                          Find the average across all columns for every unique col1 group
+    df.apply(np.mean) |                                      Apply the function np.mean() across each column
+    nf.apply(np.max,axis=1) |                                Apply the function np.max() across each row    
     
     
     
