@@ -28,3 +28,13 @@
     pd.Series(my_list) |                                               Create a series from an iterable my_list
     df.index = pd.date_range('1900/1/30', periods=df.shape[0]) |       Add a date index
     
+## Viewing/Inspecting Data
+    Use these commands to take a look at specific sections of your pandas DataFrame or Series.
+
+    df.head(n) |                                          First n rows of the DataFrame
+    df.tail(n) |                                          Last n rows of the DataFrame
+    df.shape |                                            Number of rows and columns
+    df.info() |                                           Index, Datatype and Memory information
+    df.describe() |                                       Summary statistics for numerical columns
+    s.value_counts(dropna=False) |                        View unique values and counts
+    df.apply(pd.Series.value_counts) |                    Unique values and counts for all columns    
