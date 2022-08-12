@@ -1,9 +1,11 @@
 ## Importing libraries
     import pandas as pd
     import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
 ## Importing Data  
     Use these commands to import data from a variety of different sources and formats.
-
+ 
 
     pd.read_csv(filename) |                                   From a CSV file
     pd.read_table(filename) |                                 From a delimited text file (like TSV)
